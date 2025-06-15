@@ -59,7 +59,7 @@ const Sidebar = () => {
 
             <aside className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
                 <Link to={user?.role === "admin" ? "/admin" : "/"} id="title">
-                    <h2>QuizNest</h2>
+                    <h2>Questa</h2>
                 </Link>
 
                 <nav>
