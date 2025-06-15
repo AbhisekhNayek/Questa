@@ -5,7 +5,7 @@ An advanced, full-stack **AI-powered Quiz Platform** built with the **MERN Stack
 ---
 
 ## 🌐 Live Demo  
-🚀 [Try It Now]()
+🚀 [Try It Now](https://questa-frontend-l72f.onrender.com/)
 
 ---
 
