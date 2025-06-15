@@ -1,0 +1,94 @@
+/* TakeQuiz.css */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: var(--space-lg) auto;
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px var(--shadow);
+}
+
+.question {
+    width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: var(--space-md);
+}
+
+.options {
+    width: 100%;
+}
+
+.options button {
+    width: 100%;
+    margin: var(--space-xs) 0;
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: var(--space-sm);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.options button:hover {
+    background: var(--bg-secondary);
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    margin-top: var(--space-md);
+    flex-wrap: wrap; /* Allow buttons to wrap into a new line if necessary */
+}
+
+.navigation-buttons button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: var(--space-xs) var(--space-md);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.navigation-buttons button:hover {
+    background: var(--accent2);
+}
+
+.disabled-btn {
+    background-color: #555 !important;
+    cursor: not-allowed !important;
+}
+
+.options button.selected {
+    background-color: skyblue; /* Change background color to sky blue */
+    color: white; /* Ensure text color is white */
+}
+
+.modal-actions{
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    margin-top: var(--space-md);
+    flex-wrap: wrap;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .navigation-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%;
+    }
+
+    .navigation-buttons button {
+        width: 100%; /* Make each button take full width */
+        margin-bottom: var(--space-sm); /* Add space between buttons */
+    }
+}

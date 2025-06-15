@@ -1,0 +1,73 @@
+/* TakeWrittenTest.css */
+.written-test-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: var(--space-lg) auto;
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px var(--shadow);
+}
+
+.written-test-container h2 {
+    margin-bottom: var(--space-md);
+    color: var(--accent);
+}
+
+textarea {
+    width: 100%;
+    padding: var(--space-xs);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 150px;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+
+.navigation-buttons button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: var(--space-xs) var(--space-md);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.navigation-buttons button:hover {
+    background: var(--accent2);
+}
+
+.fullscreen-toggle {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+
+.fullscreen-toggle button {
+    font-size: 1rem;
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--accent2);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.fullscreen-toggle button:hover {
+    background: #00695c;
+}

@@ -1,0 +1,118 @@
+/* contact.css */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    width: 100%;
+    max-width: 1200px;
+    margin: var(--space-lg) auto;
+    padding: var(--space-lg) var(--space-md);
+    box-sizing: border-box;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-md);
+    text-align: left;
+}
+
+.textContainer h1 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+}
+
+.textContainer .item h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.textContainer .item span {
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.formContainer {
+    background: var(--card-bg);
+    padding: var(--space-lg);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px var(--shadow);
+}
+
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.formContainer input,
+.formContainer textarea {
+    padding: var(--space-sm);
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    resize: vertical;
+    transition: border-color 0.3s;
+}
+
+.formContainer input:focus,
+.formContainer textarea:focus {
+    border-color: var(--accent);
+}
+
+.formContainer button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: var(--space-sm) var(--space-md);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.formContainer button:hover {
+    background: var(--accent2);
+    transform: translateY(-2px);
+}
+
+.error,
+.success {
+    font-size: 0.875rem;
+    margin-top: var(--space-xs);
+}
+
+.error {
+    color: var(--danger);
+}
+
+.success {
+    color: var(--success);
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 768px) {
+    .contact {
+    grid-template-columns: 1fr;
+    padding: var(--space-md);
+    }
+
+    .textContainer {
+    text-align: center;
+    align-items: center;
+    }
+
+    .textContainer h1 {
+    font-size: 1.75rem;
+    }
+
+    .formContainer {
+    padding: var(--space-md);
+    }
+}

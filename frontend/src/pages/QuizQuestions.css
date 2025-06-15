@@ -1,0 +1,113 @@
+/* QuizQuestions.css */
+
+.quiz-questions-container {
+    max-width: 1200px;
+    margin: var(--space-lg) auto;
+    padding: var(--space-lg);
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    border-radius: 16px;
+    box-shadow: 0 8px 30px var(--shadow);
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Responsive layout tweaks */
+@media (max-width: 768px) {
+    .quiz-questions-container {
+        padding: var(--space-md);
+        margin: var(--space-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz-questions-container {
+        padding: var(--space-sm);
+        margin: var(--space-sm);
+        border-radius: 10px;
+    }
+}
+
+.quiz-questions-container h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Question Box */
+.question-box {
+    background: var(--card-bg);
+    padding: var(--space-md);
+    border-radius: 10px;
+    margin-bottom: var(--space-md);
+    box-shadow: 0 4px 12px var(--shadow);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.question-box:hover {
+    transform: scale(1.01);
+}
+
+.question-box h3 {
+    margin-top: 0;
+    margin-bottom: var(--space-xs);
+    font-size: 1.2rem;
+}
+
+.question-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.question-box ul li {
+    padding: var(--space-xs) 0;
+    font-size: 0.95rem;
+    word-break: break-word;
+}
+
+/* Buttons */
+.delete-btn,
+.back-btn {
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    padding: var(--space-xs) var(--space-sm);
+    cursor: pointer;
+    max-width: 300px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.delete-btn {
+    background: var(--danger);
+    color: #fff;
+    margin-top: var(--space-sm);
+}
+
+.delete-btn:hover {
+    background: #b71c1c;
+    transform: scale(1.03);
+}
+
+.back-btn {
+    background: var(--accent);
+    color: #fff;
+    margin-bottom: var(--space-md);
+}
+
+.back-btn:hover {
+    background: var(--accent2);
+    transform: scale(1.03);
+}
+
+/* Add spacing between stacked elements on smaller devices */
+@media (max-width: 600px) {
+    .delete-btn,
+    .back-btn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}

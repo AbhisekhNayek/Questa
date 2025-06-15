@@ -1,0 +1,66 @@
+/* App.css */
+
+/* Main content area */
+/* .main-content {
+  margin-left: var(--sidebar-width);
+  transition: margin-left 0.3s ease-in-out;
+  padding: var(--space-md);
+} */
+
+/* Content container card */
+.container {
+  background: var(--card-bg);
+  padding: var(--space-lg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow);
+  margin: var(--space-md) 0;
+  margin-top: 100px;
+  min-height: 40vh;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+.table-container {
+  min-height: 40vh;
+}
+
+/* Start quiz button */
+.start-quiz-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: var(--space-sm) var(--space-md);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.start-quiz-btn:hover {
+  background: var(--accent2);
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: var(--space-sm);
+  }
+
+  .container {
+    padding: var(--space-md);
+    margin: var(--space-sm) 0;
+    margin-top: 100px;
+  }
+
+  .start-quiz-btn {
+    width: 100%;
+    padding: var(--space-sm);
+    font-size: 1rem;
+  }
+}

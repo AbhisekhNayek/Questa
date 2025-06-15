@@ -1,0 +1,47 @@
+/* UserAnalytics.css */
+.analytics-dashboard {
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    min-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-section,
+.table-section {
+    width: 100%;
+    max-width: 600px;
+    margin: var(--space-md) 0;
+    padding: var(--space-md);
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.chart-wrapper {
+    width: 100%;
+    height: 300px;
+}
+
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th {
+    background: var(--bg-secondary);
+    font-weight: 500;
+}
+
+.table-container td, .table-container th {
+    padding: var(--space-xs) var(--space-sm);
+    border-bottom: 1px solid var(--border-color);
+}

@@ -1,0 +1,44 @@
+/* UserWrittenTests.css */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: var(--space-lg) auto;
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px var(--shadow);
+}
+
+.container h2 {
+    margin-top: 0;
+}
+
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container th {
+    background: var(--bg-secondary);
+    font-weight: 500;
+}
+
+.container td, .container th {
+    padding: var(--space-xs) var(--space-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.start-test-btn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: var(--space-xs) var(--space-md);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.start-test-btn:hover {
+    background: var(--accent2);
+}

@@ -1,0 +1,76 @@
+/* Leaderboard.css */
+.leaderboard-container {
+    width: 100%;
+    max-width: 900px;
+    margin: var(--space-lg) auto;
+    padding: var(--space-lg);
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px var(--shadow);
+    text-align: center;
+}
+
+.leaderboard-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-md);
+}
+
+.leaderboard-table {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.leaderboard-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.leaderboard-table th {
+    background: var(--bg-dark);
+    font-weight: 500;
+}
+
+.leaderboard-table td, .leaderboard-table th {
+    padding: var(--space-xs) var(--space-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.leaderboard-buttons button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: var(--space-xs) var(--space-md);
+    cursor: pointer;
+    margin: 0 var(--space-xs);
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.leaderboard-buttons button:hover {
+    background: var(--accent2);
+}
+
+.leaderboard-controls {
+    margin-top: var(--space-md);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+}
+
+.leaderboard-controls select {
+    padding: var(--space-xs);
+    border-radius: 6px;
+    background: var(--bg-secondary);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+@media (max-width: 480px) {
+    .leaderboard-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+}
